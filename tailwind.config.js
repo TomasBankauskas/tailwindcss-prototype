@@ -25,7 +25,8 @@ module.exports = {
   plugins: [
     plugin(function({ addComponents, theme }) {
       const buttons = {
-        '.sb-btn': {
+        // variation 1
+        /*'.sb-btn': {
           backgroundColor: theme('colors.primary.DEFAULT'),
           borderRadius: '4px',
           color: theme('colors.white'),
@@ -65,7 +66,9 @@ module.exports = {
             color: theme('colors.gray.100'),
           }
         },
-       /*
+        */
+
+        // variation 2
         '.sb-btn': {
           backgroundColor: theme('colors.primary.DEFAULT'),
           borderRadius: '9999px',
@@ -105,7 +108,7 @@ module.exports = {
             transform: 'scale(1.05,1.05)',
           }
         },
-        */
+
       }
       addComponents(buttons)
     })

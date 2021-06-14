@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TailwindCSS - Variation 2</title>
+    <title>TailwindCSS - Variation 3</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/tailwind.css" />
 </head>
 
-<body class="font-serif">
+<body class="font-sans">
 
     <nav class="relative px-4 lg:px-10 py-8">
         <div class="flex items-center">
-            <div class="mr-auto">
+            <div class="">
                 <a class="text-2xl leading-none" href="/"><img class="h-6" src="img/logo-alt.svg" alt="" width="auto"></a>
             </div>
-            <button class="navbar-burger block lg:hidden focus:outline-none">
+            <button class="navbar-burger block lg:hidden focus:outline-none ml-auto">
                 <span class="sr-only">Menu</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M0 0h24v24H0V0z" fill="none" />
@@ -29,7 +29,7 @@
                 <li><a class="text-sm text-gray-500 hover:underline" href="variation-2.html">Variation #2</a></li>
                 <li><a class="text-sm text-gray-500 hover:underline" href="variation-3.html">Variation #3</a></li>
             </ul>
-            <ul class="hidden lg:flex lg:items-center w-auto space-x-4 ml-8">
+            <ul class="hidden lg:flex lg:items-center w-auto space-x-4 ml-auto">
                 <li><a class="text-sm text-gray-500 hover:underline" href="#">Sign in</a></li>
                 <li><a class="sb-btn-outline block px-5 py-2 text-sm" href="#">Sign up</a></li>
             </ul>
@@ -64,21 +64,21 @@
 
     <main>
         <!-- Hero -->
-        <section class="py-12 md:py-20 bg-primary">
+        <section class="pt-12 md:pt-20">
             <div class="container mx-auto px-4">
                 <div class="max-w-7xl mx-auto">
-                    <div class="flex flex-wrap flex-row-reverse items-center -mx-4">
-                        <div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
-                            <p class="text-lg font-bold text-white">Lorem ipsum dolor</p>
-                            <h1 class="max-w-2xl mt-8 mb-12 text-4xl sm:text-5xl 2xl:text-6xl text-white font-bold font-heading">The Marketing Tricks No MBA Can Teach You</h1>
-                            <p class="mb-12 lg:mb-16 text-xl text-gray-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
-                            <p class="flex flex-wrap items-center">
-                                <a class="sb-btn-light inline-block px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl mb-4 mr-4" href="#">Start free trial</a>
-                                <a class="sb-btn-light-outline inline-block px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl mb-4 mr-4" href="#">Learn more</a>
+                    <div class="flex flex-wrap flex-col items-center -mx-4">
+                        <div class="w-full max-w-3xl px-4 mb-8 text-center">
+                            <p class="text-lg text-primary">Lorem ipsum dolor</p>
+                            <h1 class="mt-8 mb-12 text-4xl sm:text-5xl 2xl:text-6xl font-bold font-heading">The Marketing Tricks No MBA Can Teach You</h1>
+                            <p class="mb-12 lg:mb-16 text-xl text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
+                            <p class="flex flex-wrap items-center justify-center">
+                                <a class="sb-btn inline-block px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl mb-4 mx-2" href="#">Start free trial</a>
+                                <a class="sb-btn-outline inline-block px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl mb-4 mx-2" href="#">Learn more</a>
                             </p>
                         </div>
-                        <div class="w-full lg:w-1/2 px-4">
-                            <img class="w-full" src="img/hero.png" alt="">
+                        <div class="w-full px-4">
+                            <img class="w-full" src="img/hero-3.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -539,9 +539,9 @@
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-wrap -mx-4">
                     <div class="w-full px-4">
-                        <div class="flex flex-wrap -mx-4 mb-6">
-                            <div class="w-1/2 sm:flex-1 px-4 mb-8">
-                                <ul class="lg:text-lg">
+                        <div class="flex flex-wrap justify-center -mx-4 mb-6">
+                            <div class="w-full sm:w-auto px-4 sm:px-12 mb-8">
+                                <ul class="lg:text-lg text-center">
                                     <li class="mb-3"><a class="text-gray-500 hover:underline" href="#">Features</a></li>
                                     <li class="mb-3"><a class="text-gray-500 hover:underline" href="#">Use Cases</a>
                                     </li>
@@ -550,8 +550,8 @@
                                     <li class="mb-3"><a class="text-gray-500 hover:underline" href="#">Stats</a></li>
                                 </ul>
                             </div>
-                            <div class="w-1/2 sm:flex-1 px-4 mb-8">
-                                <ul class="lg:text-lg">
+                            <div class="w-full sm:w-auto px-4 sm:px-12 mb-8">
+                                <ul class="lg:text-lg text-center">
                                     <li class="mb-3"><a class="text-gray-500 hover:underline" href="#">Get Started</a>
                                     </li>
                                     <li class="mb-3"><a class="text-gray-500 hover:underline" href="#">Resources</a>
@@ -561,8 +561,8 @@
                                             Support</a></li>
                                 </ul>
                             </div>
-                            <div class="w-1/2 sm:flex-1 px-4 mb-8">
-                                <ul class="lg:text-lg">
+                            <div class="w-full sm:w-auto px-4 sm:px-12 mb-8">
+                                <ul class="lg:text-lg text-center">
                                     <li class="mb-3"><a class="text-gray-500 hover:underline" href="#">About</a></li>
                                     <li class="mb-3"><a class="text-gray-500 hover:underline" href="#">Careers</a></li>
                                     <li class="mb-3"><a class="text-gray-500 hover:underline" href="#">Press & Media</a>
@@ -577,12 +577,12 @@
                         </div>
                     </div>
                     <div class="w-full px-4">
-                        <div class="flex flex-wrap items-start justify-between -mx-4">
-                            <div class="mb-6 px-4">
+                        <div class="flex flex-col -mx-4">
+                            <div class="mb-6 px-4 text-center">
                                 <a class="inline-block text-white text-2xl leading-none mb-3" href="#"><img class="h-6" src="img/logo-alt.svg" alt="" width="auto"></a>
                                 <p class="text-sm text-gray-500">© 2021 Stackbit. All rights reserved.</p>
                             </div>
-                            <div class="mb-6 px-4 flex items-center">
+                            <div class="mb-6 px-4 flex items-center justify-center">
                                 <a class="inline-block p-2 mr-4 text-gray-600 hover:text-gray-500 transition duration-200"
                                     href="#">
                                     <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24"

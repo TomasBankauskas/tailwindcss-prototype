@@ -1,5 +1,6 @@
 const plugin = require('tailwindcss/plugin');
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
+const { scale } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   purge: [],
@@ -12,13 +13,9 @@ module.exports = {
       },
       colors:{
         primary: {
-          DEFAULT: '#4ea8de',
-          dark: '#5390d9',
-        },
-        secondary: {
-          DEFAULT: '#1F2937',
-          dark: '#171f29',
-        },
+          DEFAULT: '#00b4d8',
+          dark: '#0096c7',
+        }
       }
     },
   },
@@ -29,23 +26,86 @@ module.exports = {
     plugin(function({ addComponents, theme }) {
       const buttons = {
         '.sb-btn': {
-          backgroundColor: 'transparent',
-          border: `2px solid ${theme('colors.primary.DEFAULT')}`,
-          boxShadow: `4px 4px 0 0 ${theme('colors.primary.DEFAULT')}`,
-          color: theme('colors.primary.DEFAULT'),
+          backgroundColor: theme('colors.primary.DEFAULT'),
+          borderRadius: '4px',
+          color: theme('colors.white'),
+          transition: '.2s ease',
           '&:hover': {
-            boxShadow: `0 0 0 ${theme('colors.primary.DEFAULT')}`,
+            backgroundColor: theme('colors.primary.dark'),
           }
         },
-        '.sb-btn-secondary': {
+        '.sb-btn-outline': {
+          backgroundColor: 'transparent',
+          border: `2px solid ${theme('colors.primary.DEFAULT')}`,
+          borderRadius: '4px',
+          color: theme('colors.primary.DEFAULT'),
+          transition: '.2s ease',
+          '&:hover': {
+            borderColor: theme('colors.primary.dark'),
+            color: theme('colors.primary.dark'),
+          }
+        },
+        '.sb-btn-light': {
+          backgroundColor: theme('colors.white'),
+          borderRadius: '4px',
+          color: theme('colors.primary.DEFAULT'),
+          transition: '.2s ease',
+          '&:hover': {
+            backgroundColor: theme('colors.gray.100'),
+          }
+        },
+        '.sb-btn-light-outline': {
           backgroundColor: 'transparent',
           border: `2px solid ${theme('colors.white')}`,
-          boxShadow: `4px 4px 0 0 ${theme('colors.white')}`,
+          borderRadius: '4px',
           color: theme('colors.white'),
+          transition: '.2s ease',
           '&:hover': {
-            boxShadow: `0 0 0 ${theme('colors.white')}`,
+            borderColor: theme('colors.gray.100'),
+            color: theme('colors.gray.100'),
           }
-        }
+        },
+       /*
+        '.sb-btn': {
+          backgroundColor: theme('colors.primary.DEFAULT'),
+          borderRadius: '9999px',
+          color: theme('colors.white'),
+          transform: 'scale(1,1)',
+          transition: '.3s ease',
+          '&:hover': {
+            transform: 'scale(1.05,1.05)',
+          }
+        },
+        '.sb-btn-outline': {
+          backgroundColor: 'transparent',
+          border: `2px solid ${theme('colors.primary.DEFAULT')}`,
+          borderRadius: '9999px',
+          color: theme('colors.primary.DEFAULT'),
+          transition: '.2s ease',
+          '&:hover': {
+            transform: 'scale(1.05,1.05)',
+          }
+        },
+        '.sb-btn-light': {
+          backgroundColor: theme('colors.white'),
+          borderRadius: '9999px',
+          color: theme('colors.primary.DEFAULT'),
+          transition: '.2s ease',
+          '&:hover': {
+            transform: 'scale(1.05,1.05)',
+          }
+        },
+        '.sb-btn-light-outline': {
+          backgroundColor: 'transparent',
+          border: `2px solid ${theme('colors.white')}`,
+          borderRadius: '9999px',
+          color: theme('colors.white'),
+          transition: '.2s ease',
+          '&:hover': {
+            transform: 'scale(1.05,1.05)',
+          }
+        },
+        */
       }
       addComponents(buttons)
     })

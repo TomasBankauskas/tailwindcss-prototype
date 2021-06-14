@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TailwindCSS</title>
+    <title>TailwindCSS - Variation 1</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/tailwind.css" />
@@ -14,24 +14,24 @@
 
     <nav class="relative px-4 lg:px-10 py-8 bg-gray-800">
         <div class="flex justify-between items-center">
-            <a class="text-white text-2xl leading-none" href="/"><img class="h-6" src="img/logo.svg" alt="" width="auto"></a>
-            <div class="lg:hidden">
-                <button class="block navbar-burger text-gray-50 focus:outline-none">
-                    <span class="sr-only">Menu</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path d="M0 0h24v24H0V0z" fill="none" />
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-                    </svg>
-                </button>
+            <div class="">
+                <a class="text-white text-2xl leading-none" href="/"><img class="h-6" src="img/logo.svg" alt="" width="auto"></a>
             </div>
-            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex mx-auto items-center w-auto space-x-12">
+            <button class="navbar-burger block lg:hidden text-gray-50 focus:outline-none">
+                <span class="sr-only">Menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </button>
+            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex mx-auto lg:items-center w-auto space-x-12">
                 <li><a class="text-sm text-gray-50 hover:text-gray-200" href="/">Variation #1</a></li>
                 <li><a class="text-sm text-gray-50 hover:text-gray-200" href="variation-2.html">Variation #2</a></li>
+                <li><a class="text-sm text-gray-50 hover:text-gray-200" href="variation-3.html">Variation #3</a></li>
             </ul>
-            <ul class="hidden lg:flex items-center w-auto space-x-8">
+            <ul class="hidden lg:flex lg:items-center w-auto space-x-8">
                 <li><a class="text-sm text-gray-50 hover:text-gray-200" href="#">Sign in</a></li>
-                <li><a class="sb-btn-secondary rounded block px-5 py-2 text-sm font-bold transition duration-200" href="#">Sign up</a></li>
+                <li><a class="sb-btn-light block px-5 py-2 text-sm" href="#">Sign up</a></li>
             </ul>
         </div>
         <div class="hidden navbar-menu relative z-50">
@@ -46,18 +46,17 @@
                         </svg>
                     </button>
                 </div>
-                <div>
-                    <ul>
-                        <li class="mb-1"> <a class="block p-4 text-sm font-semibold text-gray-50 hover:text-gray-200 rounded" href="/">Variation #1</a></li>
-                        <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-50 hover:text-gray-200 rounded" href="variation-2.html">Variation #2</a></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li class="mb-1"> <a class="block p-4 text-sm text-gray-50 hover:text-gray-200" href="/">Variation #1</a></li>
+                    <li class="mb-1"><a class="block p-4 text-sm text-gray-50 hover:text-gray-200" href="variation-2.html">Variation #2</a></li>
+                    <li class="mb-1"><a class="block p-4 text-sm text-gray-50 hover:text-gray-200" href="variation-3.html">Variation #3</a></li>
+                </ul>
                 <div class="mt-auto">
                     <div class="pt-6">
-                        <a class="sb-btn-secondary block px-6 py-3 text-sm text-center font-bold rounded transition duration-200 mb-6" href="#">Sign In</a>
-                        <a class="sb-btn-secondary block px-6 py-3 text-sm text-center font-bold rounded transition duration-200 mb-6" href="#">Contact Us</a>
+                        <a class="block text-center text-sm text-gray-50 hover:text-gray-200 mb-6" href="#">Sign In</a>
+                        <a class="sb-btn-light block text-center px-5 py-2 text-sm mb-6" href="#">Sign Up</a>
                     </div>
-                    <p class="mt-6 mb-4 text-sm text-center text-gray-400">&copy; 2021 All rights reserved.</p>
+                    <p class="text-sm text-center text-gray-400 mb-4">&copy; 2021 All rights reserved.</p>
                 </div>
             </nav>
         </div>
@@ -65,7 +64,7 @@
 
     <main>
         <!-- Hero -->
-        <section class="py-12 md:py-20 bg-secondary">
+        <section class="py-12 md:py-20 bg-gray-800">
             <div class="container mx-auto px-4">
                 <div class="max-w-7xl mx-auto">
                     <div class="flex flex-wrap items-center -mx-4">
@@ -74,8 +73,8 @@
                             <h1 class="max-w-2xl mt-8 mb-12 text-4xl sm:text-5xl 2xl:text-6xl text-white font-bold font-heading">The Marketing Tricks No MBA Can Teach You</h1>
                             <p class="mb-12 lg:mb-16 text-xl text-gray-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
                             <p class="flex flex-wrap items-center">
-                                <a class="sb-btn inline-block px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl font-bold rounded transition duration-200 mb-4 mr-4" href="#">Start free trial</a>
-                                <a class="sb-btn-secondary inline-block px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl font-bold rounded transition duration-200 mb-4 mr-4" href="#">Learn more</a>
+                                <a class="sb-btn inline-block px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl mb-4 mr-4" href="#">Start free trial</a>
+                                <a class="sb-btn-light inline-block px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl mb-4 mr-4" href="#">Learn more</a>
                             </p>
                         </div>
                         <div class="w-full lg:w-1/2 px-4">
@@ -89,29 +88,34 @@
         <!-- Logos -->
         <section class="pt-12 md:pt-20 pb-8 bg-gray-100">
             <div class="container mx-auto px-4">
-                <h2 class="mb-12 text-center text-xl font-bold  ">Trusted by 200+ companies</h2>
+                <h2 class="mb-12 text-center text-xl font-bold">Trusted by 200+ companies</h2>
                 <div class="max-w-7xl mx-auto">
-                    <div class="flex flex-wrap items-center justify-center">
+                    <div class="flex flex-wrap items-center justify-center -mx-4">
+                        <!-- Logo #1 -->
                         <div class="w-full sm:w-1/3 lg:w-1/5 px-4 mb-12">
                             <div class="flex w-full items-center justify-center">
                                 <img class="h-9" src="img/logo-1.svg" alt="">
                             </div>
                         </div>
+                        <!-- Logo #2 -->
                         <div class="w-full sm:w-1/3 lg:w-1/5 px-4 mb-12">
                             <div class="flex w-full items-center justify-center">
                                 <img class="h-9" src="img/logo-2.svg" alt="">
                             </div>
                         </div>
+                        <!-- Logo #3 -->
                         <div class="w-full sm:w-1/3 lg:w-1/5 px-4 mb-12">
                             <div class="flex w-full items-center justify-center">
                                 <img class="h-9" src="img/logo-3.svg" alt="">
                             </div>
                         </div>
+                        <!-- Logo #4 -->
                         <div class="w-full sm:w-1/3 lg:w-1/5 px-4 mb-12">
                             <div class="flex w-full items-center justify-center">
                                 <img class="h-9" src="img/logo-4.svg" alt="">
                             </div>
                         </div>
+                        <!-- Logo #5 -->
                         <div class="w-full sm:w-1/3 lg:w-1/5 px-4 mb-12">
                             <div class="flex w-full items-center justify-center">
                                 <img class="h-9" src="img/logo-5.svg" alt="">
@@ -128,13 +132,13 @@
                 <div class="max-w-3xl mx-auto mb-12 md:mb-20 text-center">
                     <p class="text-sm text-gray-400 mb-2 uppercase">Lorem Ipsum</p>
                     <h2 class="mb-4 md:mb-6 text-4xl lg:text-5xl font-bold font-heading">Choose a plan</h2>
-                    <p class="mb-6 text-lg text-gray-500 leading-normal">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
+                    <p class="mb-6 text-lg text-gray-500 leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
                 </div>
                 <div class="max-w-7xl mx-auto">
-                    <div class="flex flex-wrap items-center -mx-3">
-                        <div class="w-full lg:w-1/3 px-3 mb-8 lg:mb-0">
-                            <div class="px-6 py-10 sm:px-8 sm:py-12 bg-gray-100 rounded">
+                    <div class="flex flex-wrap items-center -mx-4">
+                        <!-- Plan #1 -->
+                        <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+                            <div class="px-6 py-10 sm:px-8 sm:py-12 bg-gray-100 rounded flex flex-col">
                                 <div class="pb-6 mb-10 border-b border-gray-300">
                                     <div class="flex justify-between items-center">
                                         <h3 class="text-4xl font-bold font-heading">Free</h3>
@@ -146,9 +150,7 @@
                                         <span class="mr-4">
                                             <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M6.81671 15.0418L0 8.2251L0.90027 7.32483L6.81671 13.2413L19.0997 0.958252L20 1.85852L6.81671 15.0418Z"
-                                                    fill="currentColor"></path>
+                                                <path d="M6.81671 15.0418L0 8.2251L0.90027 7.32483L6.81671 13.2413L19.0997 0.958252L20 1.85852L6.81671 15.0418Z" fill="currentColor"></path>
                                             </svg>
                                         </span>
                                         <span>Complete files</span>
@@ -157,9 +159,7 @@
                                         <span class="mr-4">
                                             <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M6.81671 15.0418L0 8.2251L0.90027 7.32483L6.81671 13.2413L19.0997 0.958252L20 1.85852L6.81671 15.0418Z"
-                                                    fill="currentColor"></path>
+                                                <path d="M6.81671 15.0418L0 8.2251L0.90027 7.32483L6.81671 13.2413L19.0997 0.958252L20 1.85852L6.81671 15.0418Z" fill="currentColor"></path>
                                             </svg>
                                         </span>
                                         <span>10GB cloud storage</span>
@@ -168,22 +168,20 @@
                                         <span class="mr-4">
                                             <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M6.81671 15.0418L0 8.2251L0.90027 7.32483L6.81671 13.2413L19.0997 0.958252L20 1.85852L6.81671 15.0418Z"
-                                                    fill="currentColor"></path>
+                                                <path d="M6.81671 15.0418L0 8.2251L0.90027 7.32483L6.81671 13.2413L19.0997 0.958252L20 1.85852L6.81671 15.0418Z" fill="currentColor"></path>
                                             </svg>
                                         </span>
                                         <span>5 team members</span>
                                     </li>
                                 </ul>
                                 <div class="text-center">
-                                    <a class="block px-3 py-3 font-bold sb-btn rounded transition duration-200"
-                                        href="#">Try free</a>
+                                    <a class="sb-btn-outline block px-3 py-3" href="#">Try free</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full lg:w-1/3 px-3 mb-8 lg:mb-0">
-                            <div class="px-6 py-10 sm:px-8 sm:py-12 bg-primary rounded">
+                        <!-- Plan #2 -->
+                        <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+                            <div class="px-6 py-10 sm:px-8 sm:py-12 bg-primary rounded flex flex-col">
                                 <div class="pb-6 mb-10 border-b border-white">
                                     <div class="flex justify-between items-center">
                                         <h3 class="text-4xl text-white font-bold font-heading">Team</h3>
@@ -248,13 +246,13 @@
                                     </li>
                                 </ul>
                                 <div class="text-center">
-                                    <a class="sb-btn-secondary block px-3 py-3 font-bold rounded transition duration-200"
-                                        href="#">Buy now</a>
+                                    <a class="sb-btn-light block px-3 py-3" href="#">Buy now</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full lg:w-1/3 px-3 mb-8 lg:mb-0">
-                            <div class="px-6 py-10 sm:px-8 sm:py-12 bg-gray-100 rounded">
+                        <!-- Plan #3 -->
+                        <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+                            <div class="px-6 py-10 sm:px-8 sm:py-12 bg-gray-100 rounded flex flex-col">
                                 <div class="pb-6 mb-10 border-b border-gray-300">
                                     <div class="flex justify-between items-center">
                                         <h3 class="text-4xl font-bold font-heading">Premium</h3>
@@ -297,8 +295,7 @@
                                     </li>
                                 </ul>
                                 <div class="text-center">
-                                    <a class="sb-btn block px-3 py-3 font-bold rounded transition duration-200"
-                                        href="#">Buy now</a>
+                                    <a class="sb-btn-outline block px-3 py-3" href="#">Buy now</a>
                                 </div>
                             </div>
                         </div>
@@ -308,10 +305,11 @@
         </section>
 
         <!-- Features -->
-        <section class="py-12 md:py-20 bg-gray-100">
+        <section class="py-12 md:py-20 bg-primary">
             <div class="container mx-auto px-4">
                 <div class="max-w-7xl mx-auto">
                     <div class="flex flex-wrap -mx-3">
+                        <!-- Feature #1 -->
                         <div class="w-full lg:w-1/2 mb-8 lg:mb-6 px-3">
                             <div class="px-6 py-10 sm:px-8 sm:py-12 rounded bg-white">
                                 <span class="flex mb-8 justify-center items-center w-20 h-20 bg-blue-500 rounded">
@@ -330,6 +328,7 @@
                                 </p>
                             </div>
                         </div>
+                        <!-- Feature #2 -->
                         <div class="w-full lg:w-1/2 mb-8 lg:mb-6 px-3">
                             <div class="px-6 py-10 sm:px-8 sm:py-12 rounded bg-white">
                                 <span class="flex mb-8 justify-center items-center w-20 h-20 bg-green-500 rounded">
@@ -350,6 +349,7 @@
                                     dolor sit amet malesuada.</p>
                             </div>
                         </div>
+                        <!-- Feature #3 -->
                         <div class="w-full lg:w-1/2 mb-8 lg:mb-6 px-3">
                             <div class="px-6 py-10 sm:px-8 sm:py-12 rounded bg-white">
                                 <span class="flex mb-8 justify-center items-center w-20 h-20 bg-pink-500 rounded">
@@ -370,6 +370,7 @@
                                 </p>
                             </div>
                         </div>
+                        <!-- Feature #4 -->
                         <div class="w-full lg:w-1/2 mb-8 lg:mb-6 px-3">
                             <div class="px-6 py-10 sm:px-8 sm:py-12 rounded bg-white">
                                 <span class="flex mb-8 justify-center items-center w-20 h-20 bg-yellow-500 rounded">
@@ -385,10 +386,8 @@
                                         </g>
                                     </svg>
                                 </span>
-                                <h2 class="text-3xl sm:text-4xl font-bold font-heading mb-4">Suspendisse interdum
-                                    ullamcorper elit, at consequat libero.</h2>
-                                <p class="text-lg text-gray-500 leading-normal">Etiam pellentesque non nibh non
-                                    pulvinar. Mauris posuere, tellus sit amet tempus vestibulum, erat augue imperdiet.
+                                <h2 class="text-3xl sm:text-4xl font-bold font-heading mb-4">Suspendisse interdum ullamcorper elit, at consequat libero.</h2>
+                                <p class="text-lg text-gray-500 leading-normal">Etiam pellentesque non nibh non pulvinar. Mauris posuere, tellus sit amet tempus vestibulum, erat augue imperdiet.
                                 </p>
                             </div>
                         </div>
@@ -398,23 +397,24 @@
         </section>
 
         <!-- Team -->
-        <section class="py-12 md:py-20 bg-gray-800">
+        <section class="py-12 md:py-20 bg-gray-100">
             <div class="container mx-auto px-4">
                 <div class="max-w-3xl mx-auto mb-12 md:mb-20 text-center">
-                    <h2 class="mb-4 md:mb-6 text-4xl lg:text-5xl text-white font-bold font-heading">Our Team</h2>
+                    <h2 class="mb-4 md:mb-6 text-4xl lg:text-5xl font-bold font-heading">Our Team</h2>
                 </div>
                 <div class="max-w-7xl mx-auto">
                     <div class="flex flex-wrap -mx-4">
+                        <!-- Team member #1 -->
                         <div class="w-full lg:w-1/3 px-4 mb-10 lg:mb-0">
-                            <div class="max-w-md mx-auto bg-gray-700 rounded-b">
+                            <div class="max-w-md mx-auto flex flex-col bg-white rounded-b">
                                 <div>
                                     <img class="w-full h-112 lg:h-80 object-cover object-top"
                                         src="img/dianne-ameter.jpg" alt="">
                                 </div>
-                                <div class="px-6 py-10 bg-gray-700 rounded-b-lg text-center">
-                                    <h3 class="mb-2 text-3xl text-white font-bold font-heading">Dianne Ameter</h3>
-                                    <p class="mb-10 text-white">UX Designer</p>
-                                    <div class="mb-10 pt-10 text-lg text-gray-200 border-t border-gray-500">
+                                <div class="px-6 py-10 bg-white rounded-b-lg text-center">
+                                    <h3 class="mb-2 text-3xl font-bold font-heading">Dianne Ameter</h3>
+                                    <p class="mb-10 text-gray-500">UX Designer</p>
+                                    <div class="mb-10 pt-10 text-lg text-gray-500 border-t border-gray-300">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl ligula,
                                             cursus id molestie vel, maximus aliquet risus.</p>
                                     </div>
@@ -441,16 +441,17 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Team member #2 -->
                         <div class="w-full lg:w-1/3 px-4 mb-10 lg:mb-0">
-                            <div class="max-w-md mx-auto bg-gray-700 rounded-b">
+                            <div class="max-w-md mx-auto flex flex-col bg-white rounded-b">
                                 <div>
                                     <img class="w-full h-112 lg:h-80 object-cover object-top" src="img/hanson-deck.jpg"
                                         alt="">
                                 </div>
-                                <div class="px-6 py-10 bg-gray-700 rounded-b-lg text-center">
-                                    <h3 class="mb-2 text-3xl text-white font-bold font-heading">Hanson Deck</h3>
-                                    <p class="mb-10 text-white">Social Media</p>
-                                    <div class="mb-10 pt-10 text-lg text-gray-200 border-t border-gray-500">
+                                <div class="px-6 py-10 bg-white rounded-b-lg text-center">
+                                    <h3 class="mb-2 text-3xl font-bold font-heading">Hanson Deck</h3>
+                                    <p class="mb-10 text-gray-500">Social Media</p>
+                                    <div class="mb-10 pt-10 text-lg text-text-gray-500 border-t border-gray-300">
                                         <p>Suspendisse ante mi, tincidunt sit amet odio sed, condimentum ultricies nunc.
                                         </p>
                                     </div>
@@ -486,16 +487,17 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Team member #3 -->
                         <div class="w-full lg:w-1/3 px-4 mb-10 lg:mb-0">
-                            <div class="max-w-md mx-auto bg-gray-700 rounded-b">
+                            <div class="max-w-md mx-auto flex flex-col bg-white rounded-b">
                                 <div>
                                     <img class="w-full h-112 lg:h-80 object-cover object-top" src="img/miles-tone.jpg"
                                         alt="">
                                 </div>
-                                <div class="px-6 py-10 bg-gray-700 rounded-b-lg text-center">
-                                    <h3 class="mb-2 text-3xl text-white font-bold font-heading">Miles Tone</h3>
-                                    <p class="mb-10 text-white">Co-Founder</p>
-                                    <div class="mb-10 pt-10 text-lg text-gray-200 border-t border-gray-500">
+                                <div class="px-6 py-10 bg-white rounded-b-lg text-center">
+                                    <h3 class="mb-2 text-3xl font-bold font-heading">Miles Tone</h3>
+                                    <p class="mb-10 text-gray-500">Co-Founder</p>
+                                    <div class="mb-10 pt-10 text-lg text-gray-500 border-t border-gray-300">
                                         <p>Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Massa placerat
                                             duis ultricies lacus. Amet justo donec enim diam.</p>
                                     </div>
@@ -530,17 +532,14 @@
         <!-- CTA -->
         <section class="py-12 md:py-20">
             <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto text-center">
-                    <div class="">
-                        <div class="mb-12">
-                            <h2 class="mb-4 md:mb-6 text-4xl sm:text-5xl font-bold font-heading">Lorem ipsum dolor sit
-                                amet consectutar</h2>
-                            <p class="text-lg text-gray-500">Pellentesque massa nibh, pulvinar vitae aliquet nec,
-                                accumsan aliquet orci.</p>
+                <div class="max-w-7xl mx-auto">
+                    <div class="flex flex-wrap items-center">
+                        <div class="w-full text-center mb-12">
+                            <h2 class="max-w-3xl mx-auto mb-4 md:mb-6 text-4xl sm:text-5xl font-bold font-heading">Lorem ipsum dolor sit amet consectutar</h2>
+                            <p class="text-lg text-gray-500">Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
                         </div>
-                        <div>
-                            <a class="sb-btn inline-block px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl font-bold rounded transition duration-200"
-                                href="#">Say hello!</a>
+                        <div class="w-full text-center">
+                            <a class="sb-btn inline-block px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl" href="#">Say hello!</a>
                         </div>
                     </div>
                 </div>

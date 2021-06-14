@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/tailwind.css" />
+</head>
+
+<body class="font-sans">
+
+    <p class="px-4 max-w-3xl my-4">Flex container, logo has margin-right set to auto</p>
+
+    <nav class="navbar relative px-4 lg:px-10 py-8 bg-gray-100 mb-16">
+        <div class="flex items-center">
+            <div class="mr-auto">
+                <a class="text-gray-800 text-2xl leading-none" href="/"><img class="h-6" src="img/logo-alt.svg" alt="" width="auto"></a>
+            </div>
+            <button class="navbar-burger block lg:hidden text-gray-800 focus:outline-none ml-auto">
+                <span class="sr-only">Menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </button>
+            <ul class="hidden lg:flex lg:items-center w-auto space-x-8 ml-8">
+                <li><a class="text-sm text-gray-800 hover:text-gray-600" href="/">Variation #1</a></li>
+                <li><a class="text-sm text-gray-800 hover:text-gray-600" href="variation-2.html">Variation #2</a></li>
+            </ul>
+            <ul class="hidden lg:flex lg:items-center w-auto space-x-4 ml-8">
+                <li><a class="text-sm text-blue-500 hover:text-blue-400" href="#">Sign in</a></li>
+                <li><a class="block px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-400 transition duration-200" href="#">Sign up</a></li>
+            </ul>
+        </div>
+        <div class="hidden navbar-menu relative z-50">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-50"></div>
+            <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-md py-8 px-6 bg-white overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-2xl font-semibold leading-none" href="#"><img class="h-6" src="img/logo-alt.svg" alt="" width="auto"></a>
+                    <button class="navbar-close text-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-1"><a class="block p-4 text-sm text-gray-800 hover:text-gray-600" href="/">Variation #1</a></li>
+                        <li class="mb-1"><a class="block p-4 text-sm text-gray-800 hover:text-gray-600" href="variation-2.html">Variation #2</a></li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <div class="pt-6">
+                        <a class="block p-4 text-sm text-gray-800 text-center hover:text-gray-600 mb-6" href="#">Sign In</a>
+                        <a class="block px-6 py-3 text-sm text-center text-white bg-blue-500 hover:bg-blue-400 transition duration-200 mb-6" href="#">Contact Us</a>
+                    </div>
+                    <p class="mb-6 text-sm text-center text-gray-400">&copy; 2021 All rights reserved.</p>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <p class="px-4 max-w-3xl my-4">Flex container, secondary menu has margin-left set to auto</p>
+
+    <nav class="navbar relative px-4 lg:px-10 py-8 bg-blue-500 mb-16">
+        <div class="flex items-center">
+            <div class="">
+                <a class="text-white text-2xl leading-none " href="/"><img class="h-6" src="img/logo.svg" alt="" width="auto"></a>
+            </div>
+            <button class="navbar-burger block lg:hidden text-white focus:outline-none ml-auto">
+                <span class="sr-only">Menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </button>
+            <ul class="hidden lg:flex lg:items-center w-auto space-x-8 ml-8">
+                <li><a class="text-sm text-gray-50 hover:text-gray-200" href="/">Variation #1</a></li>
+                <li><a class="text-sm text-gray-50 hover:text-gray-200" href="variation-2.html">Variation #2</a></li>
+            </ul>
+            <ul class="hidden lg:flex lg:items-center w-auto space-x-4 ml-auto">
+                <li><a class="text-sm text-gray-50 hover:text-gray-200" href="#">Sign in</a></li>
+                <li><a class="block px-6 py-3 text-sm text-gray-50 font-bold border border-gray-100 rounded-full transform scale-100 hover:scale-105 transition duration-200" href="#">Sign up</a></li>
+            </ul>
+        </div>
+        <div class="hidden navbar-menu relative z-50">
+            <div class="navbar-backdrop fixed inset-0 bg-white opacity-75"></div>
+            <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm py-8 px-6 bg-blue-500 overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-2xl font-semibold leading-none" href="#"><img class="h-6" src="img/logo.svg" alt="" width="auto"></a>
+                    <button class="navbar-close text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-1"><a class="block p-4 text-sm text-gray-50 hover:text-gray-200" href="/">Variation #1</a></li>
+                        <li class="mb-1"><a class="block p-4 text-sm text-gray-50 hover:text-gray-200" href="variation-2.html">Variation #2</a></li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <div class="pt-6">
+                        <a class="block p-4 text-sm text-gray-50 text-center hover:text-gray-200 mb-6" href="#">Sign In</a>
+                        <a class="block px-6 py-3 text-sm text-center text-gray-50 font-bold border border-gray-100 rounded-full transform scale-100 hover:scale-105 transition duration-200 mb-6" href="#">Contact Us</a>
+                    </div>
+                    <p class="mb-6 text-sm text-center text-white">&copy; 2021 All rights reserved.</p>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <p class="px-4 max-w-3xl my-4">Flex container, secondary menu has margin-left set to auto, primary menu has position set to absolute and is centered using left, top and transform properties</p>
+
+    <nav class="navbar relative px-4 lg:px-10 py-8 bg-gray-800 mb-16">
+        <div class="flex items-center">
+            <div class="">
+                <a class="text-white text-2xl leading-none" href="/"><img class="h-6" src="img/logo.svg" alt="" width="auto"></a>
+            </div>
+            <button class="navbar-burger block lg:hidden text-gray-50 focus:outline-none ml-auto">
+                <span class="sr-only">Menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </button>
+            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex mx-auto lg:items-center w-auto space-x-12">
+                <li><a class="text-sm text-gray-50 hover:text-gray-200" href="/">Variation #1</a></li>
+                <li><a class="text-sm text-gray-50 hover:text-gray-200" href="variation-2.html">Variation #2</a></li>
+            </ul>
+            <ul class="hidden lg:flex lg:items-center w-auto space-x-4 ml-auto">
+                <li><a class="text-sm text-gray-50 hover:text-gray-200" href="#">Sign in</a></li>
+                <li><a class="sb-btn-secondary block px-5 py-2 text-sm" href="#">Sign up</a></li>
+            </ul>
+        </div>
+        <div class="hidden navbar-menu relative z-50">
+            <div class="navbar-backdrop fixed inset-0 bg-primary opacity-75"></div>
+            <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm py-8 px-6 bg-gray-800 overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-2xl font-semibold leading-none" href="#"><img class="h-6" src="img/logo.svg" alt="" width="auto"></a>
+                    <button class="navbar-close text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                        </svg>
+                    </button>
+                </div>
+                <ul>
+                    <li class="mb-1"> <a class="block p-4 text-sm text-gray-50 hover:text-gray-200" href="/">Variation #1</a></li>
+                    <li class="mb-1"><a class="block p-4 text-sm text-gray-50 hover:text-gray-200" href="variation-2.html">Variation #2</a></li>
+                </ul>
+                <div class="mt-auto">
+                    <div class="pt-6">
+                        <a class="block text-center text-sm text-gray-50 hover:text-gray-200 mb-6" href="#">Sign In</a>
+                        <a class="sb-btn-secondary block text-center px-5 py-2 text-sm mb-6" href="#">Contact Us</a>
+                    </div>
+                    <p class="text-sm text-center text-gray-400 mb-4">&copy; 2021 All rights reserved.</p>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <p class="px-4 max-w-3xl my-4">Flex container, secondary menu has margin-left set to auto, logo has position set to absolute and is centered vertically and horizontally using left, top and transform properties</p>
+
+    <nav class="navbar relative px-4 lg:px-10 py-8 bg-gray-800 mb-16">
+        <div class="flex items-center">
+            <div class="lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-y-1/2 lg:-translate-x-1/2">
+                <a class="text-white text-2xl leading-none" href="/"><img class="h-6" src="img/logo.svg" alt="" width="auto"></a>
+            </div>
+            <button class="navbar-burger block lg:hidden text-gray-50 focus:outline-none ml-auto">
+                <span class="sr-only">Menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </button>
+            <ul class="hidden lg:flex lg:items-center w-auto space-x-12">
+                <li><a class="text-sm text-gray-50 hover:text-gray-200" href="/">Variation #1</a></li>
+                <li><a class="text-sm text-gray-50 hover:text-gray-200" href="variation-2.html">Variation #2</a></li>
+            </ul>
+            <ul class="hidden lg:flex lg:items-center w-auto space-x-4 ml-auto">
+                <li><a class="text-sm text-gray-50 hover:text-gray-200" href="#">Sign in</a></li>
+                <li><a class="sb-btn-secondary block px-5 py-2 text-sm" href="#">Sign up</a></li>
+            </ul>
+        </div>
+        <div class="hidden navbar-menu relative z-50">
+            <div class="navbar-backdrop fixed inset-0 bg-primary opacity-75"></div>
+            <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm py-8 px-6 bg-gray-800 overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-2xl font-semibold leading-none" href="#"><img class="h-6" src="img/logo.svg" alt="" width="auto"></a>
+                    <button class="navbar-close text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                        </svg>
+                    </button>
+                </div>
+                <ul>
+                    <li class="mb-1"> <a class="block p-4 text-sm text-gray-50 hover:text-gray-200" href="/">Variation #1</a></li>
+                    <li class="mb-1"><a class="block p-4 text-sm text-gray-50 hover:text-gray-200" href="variation-2.html">Variation #2</a></li>
+                </ul>
+                <div class="mt-auto">
+                    <div class="pt-6">
+                        <a class="block text-center text-sm text-gray-50 hover:text-gray-200 mb-6" href="#">Sign In</a>
+                        <a class="sb-btn-secondary block text-center px-5 py-2 text-sm mb-6" href="#">Contact Us</a>
+                    </div>
+                    <p class="text-sm text-center text-gray-400 mb-4">&copy; 2021 All rights reserved.</p>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function () {
+            // open
+            const burger = document.querySelectorAll('.navbar-burger');
+            if (burger.length) {
+                for (let i = 0; i < burger.length; i++) {
+                    const nav = burger[i].closest('.navbar');
+                    if (nav) {
+                        const menu = nav.querySelector('.navbar-menu');
+                        const close = nav.querySelector('.navbar-close');
+                        const backdrop = nav.querySelector('.navbar-backdrop');
+
+                        if (menu) {
+                            burger[i].addEventListener('click', function () {
+                                menu.classList.toggle('hidden');
+                            });
+                        }
+
+                        if (close) {
+                            close.addEventListener('click', function () {
+                                menu.classList.toggle('hidden');
+                            });
+                        }
+
+                        if (backdrop) {
+                            backdrop.addEventListener('click', function () {
+                                menu.classList.toggle('hidden');
+                            });
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
